@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}"/>
+  </head>
+
+  <body>
+    <h3>WIth great power cames great responsibilities</h3>
+  <div>
+  <img src="{% static 'images/s1.png' %}"/>
+  </div>
+    {% for odd in data %}
+<ul>
+  <li>{{odd}}</li>
+</ul>
+{% endfor %}
+  </body>
+</html>

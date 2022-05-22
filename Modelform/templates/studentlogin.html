@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>STudent login</title>
+    <style>
+      *
+      {
+        background-color:#364733;
+      }
+      table th tr td{
+        border:3px solid brown;
+
+      }
+      td{
+        text-align:center;
+        font-size:14px;
+      }
+
+      </style>
+  </head>
+  <body>
+    <form class="" method="post">
+      {{ form.as_p }}
+      {% csrf_token%}
+      <input type="submit" name="Submit" value="Submit"/>
+    </form>
+    <br>
+
+
+  </body>
+</html>

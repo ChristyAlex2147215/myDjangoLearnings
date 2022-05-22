@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% if students %}
+    <table>
+      <tr>
+        <th>fname</th>
+        <th>lname</th>
+        <th>dob</th>
+        <th>password</th>
+      </tr>
+        {% for i in s %}
+        <tr>
+          <td>{{i.fname}}</td>
+          <td>{{i.lname}}</td>
+          <td>{{i.dob}}</td>
+          <td>{{i.password}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <h2>Table is Empty</h2>
+    {% endif %}
+  </body>
+</html>
